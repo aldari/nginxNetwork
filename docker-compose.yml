@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  nginxnetwork:
+    image: ${DOCKER_REGISTRY-}nginxnetwork
+    build:
+      context: .
+      dockerfile: nginxNetwork/Dockerfile
+    expose:
+      - "5000"
+  proxy:
+    build:
+      context:  ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    links:
+      - nginxnetwork

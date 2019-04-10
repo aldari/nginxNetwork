@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nginxNetwork", "nginxNetwork\nginxNetwork.csproj", "{56D3AB21-3407-48B7-A623-F91F30299788}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{09FFCDA0-9383-49F8-AE03-48A7E922A2DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{3F5A6BF3-C7B5-4851-99DE-3D785316C382}"
+	ProjectSection(SolutionItems) = preProject
+		nginx\Dockerfile = nginx\Dockerfile
+		nginx\nginx.conf = nginx\nginx.conf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56D3AB21-3407-48B7-A623-F91F30299788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D3AB21-3407-48B7-A623-F91F30299788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D3AB21-3407-48B7-A623-F91F30299788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D3AB21-3407-48B7-A623-F91F30299788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09FFCDA0-9383-49F8-AE03-48A7E922A2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09FFCDA0-9383-49F8-AE03-48A7E922A2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09FFCDA0-9383-49F8-AE03-48A7E922A2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09FFCDA0-9383-49F8-AE03-48A7E922A2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C86B19BF-D154-47FC-A20F-FCA5BC048042}
+	EndGlobalSection
+EndGlobal
